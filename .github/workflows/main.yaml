@@ -18,7 +18,7 @@ jobs:
     - id: 'auth'
       uses: 'google-github-actions/auth@v0'
       with:
-        deliverables: app.yaml
+        deliverables: ./app.yaml
         credentials_json: '${{ secrets.GCP_SA_KEY2 }}'
 
     - id: 'deploy'
