@@ -14,8 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - id: 'auth'
+      working-directory: ./
       uses: 'google-github-actions/auth@v0'
-      working-directory: './'
       with:
         credentials_json: '${{ secrets.GCP_SA_KEY2 }}'
 
