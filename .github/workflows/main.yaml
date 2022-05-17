@@ -22,20 +22,17 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      -   uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-      -   name: Set up Python 3.7
-          - uses: actions/setup-node@v3
-              with:
-                node-version: 14
-
-
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
       # Install project requirements
       # -   name: Install requirements
       #     run: |
       #       npm i
-        - name: Docker build
-          run: docker build .
+      - name: Docker build
+        run: docker build .
       # Starts build process defined in Makefike
       # - id: build
       #   run: make build
