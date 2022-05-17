@@ -29,7 +29,7 @@ jobs:
       - id: deploy
         uses: google-github-actions/deploy-appengine@main
         with:
-          credentials: ${{ secrets.GCP_SA_KEY }}
+          credentials: ${{ secrets.GCP_SA_KEY2 }}
   # This workflow contains a single job called "build"
   # build:
   #   # The type of runner that the job will run on
