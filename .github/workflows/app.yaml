@@ -2,4 +2,3 @@
 runtime: nodejs16
 
 instance_class: F1
-service: service-name
