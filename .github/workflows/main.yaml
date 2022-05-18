@@ -19,8 +19,8 @@ jobs:
       # -   name: Install requirements
       #     run: |
       #       npm i
-      - name: Docker build
-        run: docker build .
+      # - name: Docker build
+      #   run: docker build .
       # Starts build process defined in Makefike
       # - id: build
       #   run: make build
