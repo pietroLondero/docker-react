@@ -3,5 +3,3 @@ runtime: nodejs16
 
 instance_class: F1
 service: service-name
-basic_scaling:
-  idle_timeout: 10m
