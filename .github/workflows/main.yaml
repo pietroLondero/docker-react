@@ -27,7 +27,7 @@ jobs:
 
       # Deploy application on Google App Engine
       - id: deploy
-        uses: google-github-actions/deploy-appengine@main
+        uses: google-github-actions/deploy-appengine@v0
         with:
           credentials: ${{ secrets.GCP_SA_KEY2 }}
   # This workflow contains a single job called "build"
